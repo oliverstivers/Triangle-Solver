@@ -69,7 +69,7 @@ public class Solver {
                     System.out.println("Solution 1: " + angle2 + "\nSolution 2: " + angle3);
                     
                 }
-                if(side2 == side){
+                else if(side2 == side){
                     System.out.println("Angle is " + angle + " degrees");
                 }
                 else{
