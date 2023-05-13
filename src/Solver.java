@@ -57,16 +57,17 @@ public class Solver {
                     double calc = side2 / side * Math.sin(angle);
                     if(calc > 1){
                         System.out.println("No solution");
+                        return;
                     }
                     else if(calc == 1){
                         System.out.println("Angle is 90 degrees");
+                        return;
                     }
-                    else{
-                        System.out.println("Two solutions: ");
-                        double angle2 = Math.toDegrees(Math.asin(calc));
-                        double angle3 = 180 - angle2;
-                        System.out.println("Solution 1: " + angle2 + "\nSolution 2: " + angle3);
-                    }
+                    System.out.println("Two solutions: ");
+                    double angle2 = Math.toDegrees(Math.asin(calc));
+                    double angle3 = 180 - angle2;
+                    System.out.println("Solution 1: " + angle2 + "\nSolution 2: " + angle3);
+                    
                 }
                 if(side2 == side){
                     System.out.println("Angle is " + angle + " degrees");
